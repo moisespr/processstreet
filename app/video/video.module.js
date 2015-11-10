@@ -1,7 +1,7 @@
 (function() {
 	'use strict';
 
-  angular.module('processstreet.login', [
+  angular.module('processstreet.video', [
     /* Angular modules */
     'ngRoute',
     /* 3rd-party modules */
