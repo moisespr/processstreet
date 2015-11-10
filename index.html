@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="processstreet">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Process Street</title>
+	<!-- CSS DEPENDENCIES -->
+	<link href='bower_components/bootstrap/dist/css/bootstrap.css' rel='stylesheet' />
+	<link href='bower_components/angular-loading-bar/build/loading-bar.css' rel='stylesheet' />
+	<!-- APP CSS -->
+	<link href='assets/css/app.css' rel='stylesheet' />
+</head>
+<body class="ng-cloak">
+		<div ng-include="'app/layout/navbar.view.html'"></div>
+		<div class="container">
+			<message></message>
+			<div ng-view></div>
+		</div>
+		<!-- JS DEPENDENCIES -->
+	  <script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src='bower_components/angular/angular.js'></script>
+		<script src='bower_components/angular-route/angular-route.js'></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+		<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+		<script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+
+		<!-- APP JS -->
+		<script src="app/processstreet.module.js"></script>
+		<script src="app/processstreet.config.js"></script>
+
+		<script src="app/login/login.module.js"></script>
+		<script src="app/login/login.service.js"></script>
+		<script src="app/login/login.routes.js"></script>
+		<script src="app/login/login.controller.js"></script>
+		<script src="app/login/signup.controller.js"></script>
+
+		<script src="app/layout/navbar.controller.js"></script>
+
+		<script src="commons/message/message.module.js"></script>
+		<script src="commons/message/message.directive.js"></script>
+		<script src="commons/message/message.event.js"></script>
+</body>
+</html>
