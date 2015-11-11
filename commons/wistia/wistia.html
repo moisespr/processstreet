@@ -1,0 +1,22 @@
+<style>
+.bar {
+    height: 18px;
+    background: green;
+}
+</style>
+<div>
+  <form id="fileupload" action="https://upload.wistia.com/" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="api_password" value="{{ vm.apiPassword }}" />
+    <input type="hidden" name="project_id" value="{{ vm.projectId }}" />
+    <span class="btn btn-success fileinput-button">
+      <i class="glyphicon glyphicon-plus"></i>
+      <span>Add Video</span>
+      <input type="file" name="file">
+    </span>
+  </form>
+</div>
+<div id="progress">
+    <div class="bar" style="width: 0%;"></div>
+</div>
+<div id="video">
+</div>

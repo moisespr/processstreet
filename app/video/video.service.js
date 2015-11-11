@@ -6,7 +6,7 @@
     .factory('VideoService', VideoService);
 
   VideoService.$inject = ['$http', 'URLS', '$location'];
-  function LoginService($http, URLS, $location) {
+  function VideoService($http, URLS, $location) {
     return {
     };
   }

@@ -8,23 +8,31 @@
 	<!-- CSS DEPENDENCIES -->
 	<link href='bower_components/bootstrap/dist/css/bootstrap.css' rel='stylesheet' />
 	<link href='bower_components/angular-loading-bar/build/loading-bar.css' rel='stylesheet' />
+  <link href='bower_components/blueimp-file-upload/css/jquery.fileupload.css' rel='stylesheet' />
+  <link href='bower_components/blueimp-file-upload/css/jquery.fileupload-ui.css' rel='stylesheet' />
 	<!-- APP CSS -->
 	<link href='assets/css/app.css' rel='stylesheet' />
 </head>
 <body class="ng-cloak">
 		<div ng-include="'app/layout/navbar.view.html'"></div>
 		<div class="container">
-			<message></message>
 			<div ng-view></div>
 		</div>
 		<!-- JS DEPENDENCIES -->
 	  <script src="bower_components/jquery/dist/jquery.js"></script>
+	  <script src="bower_components/jquery-ui/jquery-ui.js"></script>
 		<script src='bower_components/angular/angular.js'></script>
 		<script src='bower_components/angular-route/angular-route.js'></script>
 		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 		<script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
 		<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 		<script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+
+    <script src="bower_components/blueimp-file-upload/js/jquery.fileupload.js"></script>
+    <script src="bower_components/blueimp-file-upload/js/jquery.iframe-transport.js"></script>
+    <script src="bower_components/blueimp-file-upload/js/jquery.fileupload-process.js"></script>
+    <script src="bower_components/blueimp-load-image/js/load-image.all.min.js"></script>
+    <script src="bower_components/blueimp-file-upload/js/jquery.fileupload-video.js"></script>
 
 		<!-- APP JS -->
 		<script src="app/processstreet.module.js"></script>
